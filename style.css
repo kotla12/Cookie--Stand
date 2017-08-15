@@ -1,0 +1,22 @@
+body{
+background: linear-gradient(to bottom, #d04059 0%, #d2b48c 100%);
+}
+header {
+  text-align: center;
+}
+img {
+  border-radius: 50%;
+    border: 5px solid #020202;
+    width: 67%;
+  }
+  h1 {
+    font-family: 'Lobster', cursive;
+    color: #EACC23;
+  }
+.table {
+  display: inline;
+  float: left;
+}
+a {
+  text-decoration: none;
+}
