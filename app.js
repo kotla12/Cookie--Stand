@@ -1,5 +1,5 @@
 'use strict';
-var openHours = ['6 a.m','7 a.m','8 a.m','9 a.m','10 a.m','11 a.m','12 p.m','1 p.m','2 p.m','3 p.m','4 p.m','5 p.m','6 p.m','7 p.m','8s p.m',];
+var openHours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 var pike = {
   name : '1st and Pike',
   minCust : 23,
