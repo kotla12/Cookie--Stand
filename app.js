@@ -8,11 +8,16 @@ var pike = {
   aveCookieHourly : [],
   totalCookies : 0,
   // Average customers per hours to pike store.
+  randCustPerHr : function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  },
   cookieSale : function () {
+    this.aveCookieHourly = [];
+    this.totalCookies = 0;
     for ( var i = 0; i < openHours.length; i++){
       // this calculates the average cookies sold per hour.
-      var sale = Math.round((Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie);
-      //console.log(sale);
+      var sale = Math.round(this.randCustPerHr() * this.aveCookie);
+      console.log(sale);
       // here I'm pushing the results into aveCookieHourly array!
       this.aveCookieHourly.push(sale);
       // adding up all the cookies
@@ -23,7 +28,7 @@ var pike = {
 
   },
   show: function() {
-    for (var i = 0; i < pike.aveCookieHourly.length; i++) {
+    for (var i = 0; i < this.aveCookieHourly.length; i++) {
       var node = document.createElement('li');
       var textnode = document.createTextNode(openHours[i] + ': ' + this.aveCookieHourly[i] + ' Cookies');
       node.appendChild(textnode);
@@ -33,6 +38,11 @@ var pike = {
     dailyTotal.textContent = 'Total: ' + this.totalCookies + ' Cookies';
     document.getElementById('pike').appendChild(dailyTotal);
   }
+  /* var list = document.getElementById('list')
+  var (var 9 = 0; i < oepenHours.length; i++){
+  var listItems - document.createElement('li');
+  listItems.innerText = openHours[i] + ': ' + pike.aveCookieHourly + ' cookies';
+}*/
 
 };
 pike.cookieSale();

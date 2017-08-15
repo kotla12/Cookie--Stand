@@ -1,5 +1,5 @@
 body{
-  background-color: tan;
+background: linear-gradient(to bottom, #d04059 0%, #d2b48c 100%);
 }
 header {
   text-align: center;
@@ -11,7 +11,7 @@ img {
   }
   h1 {
     font-family: 'Lobster', cursive;
-    color: red;
+    color: #EACC23;
   }
 .table {
   display: inline;
