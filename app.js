@@ -13,7 +13,9 @@ var pike = {
       // this calculates the average cookies sold per hour.
       var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
       console.log(sale);
+      // here I'm pushing the results into aveCookieHourly array!
       this.aveCookieHourly.push(sale);
+      // adding up all the cookies
       this.totalCookies += sale;
     };
 
@@ -22,6 +24,30 @@ var pike = {
   }
 
 };
-
-
 pike.cookieSale();
+
+var seatac = {
+  name : 'Seatac Airport',
+  minCust : 3,
+  maxCust : 24,
+  aveCookie: 1.2,
+  aveCookieHourly : [],
+  totalCookies : 0,
+  // Average customers per hours to pike store.
+  cookieSale : function () {
+    for ( var i = 0; i < openHours.length; i++){
+      // this calculates the average cookies sold per hour.
+      var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
+      console.log(sale);
+      // here I'm pushing the results into aveCookieHourly array!
+      this.aveCookieHourly.push(sale);
+      // adding up all the cookies
+      this.totalCookies += sale;
+    };
+
+    console.log(this.totalCookies);
+
+  }
+
+};
+seatac.cookieSale();
