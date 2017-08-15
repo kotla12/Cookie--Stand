@@ -1,0 +1,22 @@
+body{
+  background-color: tan;
+}
+header {
+  text-align: center;
+}
+img {
+  border-radius: 50%;
+    border: 5px solid #020202;
+    width: 67%;
+  }
+  h1 {
+    font-family: 'Lobster', cursive;
+    color: red;
+  }
+.table {
+  display: inline;
+  float: left;
+}
+a {
+  text-decoration: none;
+}

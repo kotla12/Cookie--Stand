@@ -87,7 +87,7 @@ var seattle = {
   cookieSale : function () {
     for ( var i = 0; i < openHours.length; i++){
       // this calculates the average cookies sold per hour.
-      var sale = Math.round((Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie);
+      var sale = Math.round((Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie)  ;
       //console.log(sale);
       // here I'm pushing the results into aveCookieHourly array!
       this.aveCookieHourly.push(sale);
