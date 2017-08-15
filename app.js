@@ -12,7 +12,7 @@ var pike = {
     for ( var i = 0; i < openHours.length; i++){
       // this calculates the average cookies sold per hour.
       var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
-      console.log(sale);
+      //console.log(sale);
       // here I'm pushing the results into aveCookieHourly array!
       this.aveCookieHourly.push(sale);
       // adding up all the cookies
@@ -38,7 +38,7 @@ var seatac = {
     for ( var i = 0; i < openHours.length; i++){
       // this calculates the average cookies sold per hour.
       var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
-      console.log(sale);
+      //console.log(sale);
       // here I'm pushing the results into aveCookieHourly array!
       this.aveCookieHourly.push(sale);
       // adding up all the cookies
@@ -51,3 +51,79 @@ var seatac = {
 
 };
 seatac.cookieSale();
+
+var seattle = {
+  name : 'Seattle Center',
+  minCust : 11,
+  maxCust : 38,
+  aveCookie: 3.7,
+  aveCookieHourly : [],
+  totalCookies : 0,
+  // Average customers per hours to pike store.
+  cookieSale : function () {
+    for ( var i = 0; i < openHours.length; i++){
+      // this calculates the average cookies sold per hour.
+      var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
+      //console.log(sale);
+      // here I'm pushing the results into aveCookieHourly array!
+      this.aveCookieHourly.push(sale);
+      // adding up all the cookies
+      this.totalCookies += sale;
+    };
+
+    console.log(this.totalCookies);
+
+  }
+
+};
+seattle.cookieSale();
+var capitol = {
+  name : 'Capitol Hill',
+  minCust : 20,
+  maxCust : 38,
+  aveCookie: 2.3,
+  aveCookieHourly : [],
+  totalCookies : 0,
+  // Average customers per hours to pike store.
+  cookieSale : function () {
+    for ( var i = 0; i < openHours.length; i++){
+      // this calculates the average cookies sold per hour.
+      var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
+      //console.log(sale);
+      // here I'm pushing the results into aveCookieHourly array!
+      this.aveCookieHourly.push(sale);
+      // adding up all the cookies
+      this.totalCookies += sale;
+    };
+
+    console.log(this.totalCookies);
+
+  }
+
+};
+capitol.cookieSale();
+var alki = {
+  name : 'Alki',
+  minCust : 2,
+  maxCust : 16,
+  aveCookie: 4.6,
+  aveCookieHourly : [],
+  totalCookies : 0,
+  // Average customers per hours to pike store.
+  cookieSale : function () {
+    for ( var i = 0; i < openHours.length; i++){
+      // this calculates the average cookies sold per hour.
+      var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
+      //console.log(sale);
+      // here I'm pushing the results into aveCookieHourly array!
+      this.aveCookieHourly.push(sale);
+      // adding up all the cookies
+      this.totalCookies += sale;
+    };
+
+    console.log(this.totalCookies);
+
+  }
+
+};
+alki.cookieSale();
