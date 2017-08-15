@@ -4,8 +4,22 @@ var pike = {
   name : '1st and Pike',
   minCust : 23,
   maxCust : 65,
-  AveCookie: 6.3,
+  aveCookie: 6.3,
+  aveCookieHourly : [],
   totalCookies : 0,
-  AveCustHourly : [],
-  AveCookieHourly : []
-} ;
+  // Average customers per hours to pike store.
+  cookieSale : function () {
+    for ( var i = 0; i < openHours.length; i++){
+      // this calculates the average cookies sold per hour.
+      var sale = (Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust)) * this.aveCookie;
+      console.log(sale);
+      this.aveCookieHourly.push(sale);
+      this.totalCookies += sale;
+    };       console.log(this.totalCookies);
+
+  },
+
+};
+
+
+pike.cookieSale();
