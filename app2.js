@@ -12,8 +12,10 @@ function store (name,minCust, maxCust, aveCookie ) {
   };
   this.cookieSale = function () {
     for ( var i = 0; i < openHours.length; i++){
-      this.aveCookieHourly.push(Math.round(this.randCustPerHr * this.aveCookie));
+      this.aveCookieHourly.push(Math.round(this.randCustPerHr() * this.aveCookie));
+      console.log(this.aveCookieHourly);
       this.totalCookies += this.aveCookieHourly[i];
+
     };
   };
   this.show = function() {
@@ -29,10 +31,19 @@ function store (name,minCust, maxCust, aveCookie ) {
     document.getElementById('pike').appendChild(dailyTotal);
   };
 }
-cookieSale();
-show();
-var pike = new store ('1st and Pike', 23, 65, 6.3);
-var seaTac = new store ('Seatac Airport', 3, 24, 1.2);
-var sea = new store ('Seattle Center', 11, 38, 3.7);
-var capitol = new store ('Capitol Hill', 20, 38, 2.3);
-var alki = new store ('Alki', 2, 16, 4.6);
+
+var pike = new store('1st and Pike', 23, 65, 6.3);
+var seaTac = new store('Seatac Airport', 3, 24, 1.2);
+var sea = new store('Seattle Center', 11, 38, 3.7);
+var capitol = new store('Capitol Hill', 20, 38, 2.3);
+var alki = new store('Alki', 2, 16, 4.6);
+pike.cookieSale();
+pike.show();
+// seaTac.cookieSale();
+// seaTac.show();
+// sea.cookieSale();
+// sea.show();
+// capitol.cookieSale();
+// capitol.show();
+// alki.cookieSale();
+// alki.show();
