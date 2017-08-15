@@ -15,9 +15,11 @@ var pike = {
       console.log(sale);
       this.aveCookieHourly.push(sale);
       this.totalCookies += sale;
-    };       console.log(this.totalCookies);
+    };
 
-  },
+    console.log(this.totalCookies);
+
+  }
 
 };
 
