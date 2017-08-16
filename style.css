@@ -24,3 +24,6 @@ table, th, td {
    border: 1px solid black;
    border-collapse: collapse;
 }
+tr:nth-child(2n) {
+  background-color: rgba(224,221,221,0.39);
+}
