@@ -82,13 +82,3 @@ seaTac.showInfo();
 sea.showInfo();
 capitol.showInfo();
 alki.showInfo();
-
-//pike.show();
-// seaTac.cookieSale();
-// seaTac.show();
-// sea.cookieSale();
-// sea.show();
-// capitol.cookieSale();
-// capitol.show();
-// alki.cookieSale();
-// alki.show();

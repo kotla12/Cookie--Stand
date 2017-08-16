@@ -1,5 +1,5 @@
-body{
-background: linear-gradient(to bottom, #d04059 0%, #d2b48c 100%);
+  body{
+background-color: tan;
 }
 header {
   text-align: center;
@@ -19,4 +19,8 @@ img {
 }
 a {
   text-decoration: none;
+}
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
 }
