@@ -35,7 +35,7 @@ function Store (name,minCust, maxCust, aveCookie ) {
       tbl.appendChild(row);
     }
     // attaches last tr after hours td.
-    var dailyCookies = document.createElement('tr');
+    var dailyCookies = document.createElement('td');
     dailyCookies.innerHTML = this.totalCookies;
     row.appendChild(dailyCookies);
     tbl.appendChild(row);
