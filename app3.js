@@ -20,10 +20,10 @@ function Store (name,minCust, maxCust, aveCookie ) {
       this.totalCookies += this.aveCookieHourly[i];
 
     };
-
   };
   storeNames.push(this);
-//change name
+  this.cookieSale();
+
   this.render = function () {
     var trElement = document.createElement('tr');
     var tdElement = document.createElement('td');
@@ -35,14 +35,12 @@ function Store (name,minCust, maxCust, aveCookie ) {
       trElement.appendChild(tdElement2);
       storeData.appendChild(trElement);
     };
-    // something is wrong with this code. needs to be fixed
     var tdTotal = document.createElement('td');
     tdTotal.innerHTML = this.totalCookies;
     trElement.appendChild(tdTotal);
     storeData.appendChild(trElement);
     console.log(tdTotal);
   };
-  this.cookieSale();
 };
 new Store('1st and Pike', 23, 65, 6.3);
 new Store('Seatac Airport', 3, 24, 1.2);
@@ -73,3 +71,11 @@ function storeNamesRow() {
 }
 headerRows();
 storeNamesRow();
+function addStoreFromInput (event){
+// finds input tag in html and writes in the text box
+  var store = event.target.store.value;
+  var minCust = event.target.minCust.value;
+  var maxCust = event.target.maxCust.value;
+  var aveCookie = event.target.aveCookie.value;
+
+}
