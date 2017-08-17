@@ -39,7 +39,6 @@ function Store (name,minCust, maxCust, aveCookie ) {
     tdTotal.innerHTML = this.totalCookies;
     trElement.appendChild(tdTotal);
     storeData.appendChild(trElement);
-    console.log(tdTotal);
   };
 };
 new Store('1st and Pike', 23, 65, 6.3);
@@ -63,6 +62,23 @@ function headerRows(){
   trElement.appendChild(thElement);
   storeData.appendChild(trElement);
 };
+function footerRow() {
+  var total = 0;
+  var trElement = document.createElement('tr');
+  var thElement = document.createElement('th');
+  thElement.innerHTML = 'Totals';
+  for (var i = 0; i < openHours.length; i++){
+    for ( var j = 0; j < storeNames.legth; j++){
+      total += storeNames[j].aveCookieHourly[i];
+    };
+  };
+  var tdElement = document.createElement('td');
+  tdElement.innerHTML = total;
+  trElement.appendChild(thElement);
+  trElement.appendChild(tdElement);
+  storeData.appendChild(trElement);
+
+};
 //create each store row information
 function storeNamesRow() {
   for (var i = 0 ; i < storeNames.length; i++){
@@ -71,11 +87,20 @@ function storeNamesRow() {
 }
 headerRows();
 storeNamesRow();
+footerRow();
 function addStoreFromInput (event){
 // finds input tag in html and writes in the text box
   var store = event.target.store.value;
   var minCust = event.target.minCust.value;
   var maxCust = event.target.maxCust.value;
   var aveCookie = event.target.aveCookie.value;
-
-}
+  var addNewStore = new Store(store,minCust,maxCust,aveCookie);
+// remove typed in numbers in the text field
+  event.target.store.value = '';
+  event.target.minCust.value = '';
+  event.target.maxCust.value = '';
+  event.target.aveCookie.value = '';
+  addNewStore.render();
+  event.preventDefault();
+};
+storeForm.addEventListener('submit',addStoreFromInput);

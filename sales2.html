@@ -3,20 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Sales page</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Display of each store estimation</h1>
+    <header>
+      <img src="https://github.com/codefellows/seattle-201d25/blob/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png?raw=true" alt="photo of Salmon">
+      <h1>Salmon-Cookie Time!</h1>
+    </header>
+    <hq>Display of each store estimation</hq>
     <form id = "form">
       <fieldset>
+        <legend>Add A New Store  </legend>
           <label for = "store">Name</lable>
           <input name = "store" type = "text"/>
-          <label for = "minCust">Min Number of Customers</lable>
+          <label for = "minCust">Min Customers</lable>
           <input name = "minCust" type = "text"/>
-          <label for = "maxCust">Max Number of Customers</lable>
+          <label for = "maxCust">Max Customers</lable>
           <input name = "maxCust" type = "text"/>
-          <label for = "aveCookie">Ave Cookie/Sale</lable>
+          <label for = "aveCookie">Cookie/Sale</lable>
           <input name = "aveCookie" type = "text"/>
           <button type = "submit">Add</button>
+
       </fieldset>
     </form>
     <h2>Table</h2>
