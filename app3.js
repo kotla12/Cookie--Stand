@@ -65,7 +65,7 @@ function headerRows(){
   trElement.appendChild(thElement);
   storeData.appendChild(trElement);
 };
-//change name
+//create each store row information
 function storeNamesRow() {
   for (var i = 0 ; i < storeNames.length; i++){
     storeNames[i].render();
