@@ -20,7 +20,8 @@ img {
   }
   h1 {
     font-family: 'Lobster', cursive;
-    color: #EACC23;
+    color: rgba(234,35,35,0.72);
+    text-decoration: blink;
   }
 .table {
   display: inline;

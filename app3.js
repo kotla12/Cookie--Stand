@@ -91,8 +91,8 @@ footerRow();
 function addStoreFromInput (event){
 // finds input tag in html and writes in the text box
   var store = event.target.store.value;
-  var minCust = event.target.minCust.value;
-  var maxCust = event.target.maxCust.value;
+  var minCust = parseInt(event.target.minCust.value);
+  var maxCust = parseInt(event.target.maxCust.value);
   var aveCookie = event.target.aveCookie.value;
   var addNewStore = new Store(store,minCust,maxCust,aveCookie);
 // remove typed in numbers in the text field
