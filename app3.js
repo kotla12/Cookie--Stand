@@ -63,21 +63,22 @@ function headerRows(){
   storeData.appendChild(trElement);
 };
 function footerRow() {
-  var total = 0;
   var trElement = document.createElement('tr');
   var thElement = document.createElement('th');
+  trElement.appendChild(thElement);
   thElement.innerHTML = 'Totals';
   for (var i = 0; i < openHours.length; i++){
-    for ( var j = 0; j < storeNames.legth; j++){
-      total += storeNames[j].aveCookieHourly[i];
-    };
-  };
-  var tdElement = document.createElement('td');
-  tdElement.innerHTML = total;
-  trElement.appendChild(thElement);
-  trElement.appendChild(tdElement);
-  storeData.appendChild(trElement);
+    var total = 0;
 
+    for ( var j = 0; j < storeNames.length; j++){
+      total += storeNames[j].aveCookieHourly[i];
+
+    }
+    var tdElement = document.createElement('td');
+    tdElement.innerHTML = total;
+    trElement.appendChild(tdElement);
+  };
+  storeData.appendChild(trElement);
 };
 //create each store row information
 function storeNamesRow() {

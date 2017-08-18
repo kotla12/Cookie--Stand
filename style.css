@@ -21,7 +21,10 @@ img {
   h1 {
     font-family: 'Lobster', cursive;
     color: rgba(234,35,35,0.72);
-    text-decoration: blink;
+    text-decoration: underline;
+  }
+  h2{
+    color: saddlebrown;
   }
 .table {
   display: inline;
@@ -36,4 +39,17 @@ table, th, td {
 }
 tr:nth-child(2n) {
   background-color: rgba(224,221,221,0.39);
+}
+.font-color {
+  color: #020202;
+  font-size: 22px;
+  font-family: monospace;}
+input {
+    color: #d41916;
+    width: 30%;
+    font-size: 17px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 6%;
 }
