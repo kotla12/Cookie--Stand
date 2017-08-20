@@ -80,6 +80,7 @@ function footerRow() {
   };
   storeData.appendChild(trElement);
 };
+// make a for the last cell make a for loop to addup the total culomn and add it to the table rightbottom cell.
 //create each store row information
 function storeNamesRow() {
   for (var i = 0 ; i < storeNames.length; i++){
@@ -94,7 +95,7 @@ function addStoreFromInput (event){
   var store = event.target.store.value;
   var minCust = parseInt(event.target.minCust.value);
   var maxCust = parseInt(event.target.maxCust.value);
-  var aveCookie = event.target.aveCookie.value;
+  var aveCookie = parseFloat(event.target.aveCookie.value);
   var addNewStore = new Store(store,minCust,maxCust,aveCookie);
 // remove typed in numbers in the text field
   event.target.store.value = '';
