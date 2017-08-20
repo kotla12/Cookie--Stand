@@ -65,6 +65,7 @@ function headerRows(){
 function footerRow() {
   var trElement = document.createElement('tr');
   var thElement = document.createElement('th');
+
   trElement.appendChild(thElement);
   thElement.innerHTML = 'Totals';
   for (var i = 0; i < openHours.length; i++){
@@ -73,10 +74,19 @@ function footerRow() {
     for ( var j = 0; j < storeNames.length; j++){
       total += storeNames[j].aveCookieHourly[i];
 
-    }
-    var tdElement = document.createElement('td');
-    tdElement.innerHTML = total;
-    trElement.appendChild(tdElement);
+    };
+    // need to find the grandTotal!!!
+    // var grandTotal = 0;
+    // for (var x = 0; x < storeNames.length ; x ++) {
+    //   grandTotal += storeNames[x].aveCookieHourly[i];
+    // }; consonle.log (grandTotal);
+    // var tdElement = document.createElement('td');
+    // tdElement.innerHTML = grandTotal;
+    // tdElement2.appendChild(tdElement);
+    var tdElement2 = document.createElement('td');
+    tdElement2.innerHTML = total;
+    trElement.appendChild(tdElement2);
+
   };
   storeData.appendChild(trElement);
 };

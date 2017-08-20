@@ -7,6 +7,7 @@
         background: limin-width: 593px;
         background-repeat: no-repeat;
         background-color: rgba(234, 229, 0, 0.65);
+        width:auto;
 }
 header {
   text-align: center;
@@ -23,7 +24,7 @@ img {
     color: rgba(234,35,35,0.72);
     text-decoration: underline;
   }
-  h2{
+h2{
     color: saddlebrown;
   }
 .table {
@@ -52,4 +53,34 @@ input {
     box-sizing: border-box;
     border: 1px solid red;
     border-radius: 6%;
+}
+.nav {
+  list-style: none;
+  text-align: center;
+}
+ li {
+  display: inline-block;
+  padding: 0 25px 0 25px;
+}
+ li > a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Righteous', cursive;
+}
+li > a:hover {
+  color: green;
+}
+#add {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+p {
+  font-family: 'Righteous', cursive;
+  color: rgb(255, 0, 43);
+}
+.center {
+  text-align: center;
+  
 }
