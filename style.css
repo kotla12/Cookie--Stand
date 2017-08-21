@@ -12,7 +12,7 @@
 header {
   text-align: center;
 }
-img {
+.sal {
   border-radius: 50%;
   border: 5px solid #020202;
   width: 67%;
@@ -82,5 +82,12 @@ p {
 }
 .center {
   text-align: center;
-  
+
+}
+.pro{
+border: 3px solid black;
+}
+.black {
+  color: black;
+  font-size: 50px;
 }
