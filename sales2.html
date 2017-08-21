@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sales page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <img class = "sal" src="https://github.com/codefellows/seattle-201d25/blob/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png?raw=true" alt="photo of Salmon">
+      <h1>Salmon-Cookie Time!</h1>
+    </header>
+  <div class="center">
+    <h2>Display of each store estimation</h2>
+    <form id = "form">
+      <fieldset>
+        <legend>Add A New Store  </legend>
+          <label for = "store" class = "font-color">Name</lable>
+          <input name = "store" type = "text" required/>
+          <label for = "minCust" class = "font-color">Min Customers</lable>
+          <input name = "minCust" type = "number"required/>
+          <label for = "maxCust" class = "font-color">Max Customers</lable>
+          <input name = "maxCust" type = "number"required/>
+          <label for = "aveCookie"class = "font-color">Cookie/Sale</lable>
+          <input name = "aveCookie" type = "number" step = "0.1"/>
+          <button type = "submit" id = "add">Add</button>
+
+      </fieldset>
+    </form>
+    <h2>Table</h2>
+    <table id = "sales"> </table>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p> &copy;All rights reserved 2017, Salmon Cookies Co.</p>
+ </footer>
+ <script src = "app3.js" type="text/javascript">
+ </script>
+  </body>
+</html>
