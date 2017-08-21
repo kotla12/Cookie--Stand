@@ -1,0 +1,93 @@
+  body{
+    height: 200px;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+        background: limin-width: 593px;
+        background-repeat: no-repeat;
+        background-color: rgba(234, 229, 0, 0.65);
+        width:auto;
+}
+header {
+  text-align: center;
+}
+.sal {
+  border-radius: 50%;
+  border: 5px solid #020202;
+  width: 67%;
+-webkit-filter: contrast(180%);filter: contrast(180%);
+
+  }
+  h1 {
+    font-family: 'Lobster', cursive;
+    color: rgba(234,35,35,0.72);
+    text-decoration: underline;
+  }
+h2{
+    color: saddlebrown;
+  }
+.table {
+  display: inline;
+  float: left;
+}
+a {
+  text-decoration: none;
+}
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+tr:nth-child(2n) {
+  background-color: rgba(224,221,221,0.39);
+}
+.font-color {
+  color: #020202;
+  font-size: 22px;
+  font-family: monospace;}
+input {
+    color: #d41916;
+    width: 30%;
+    font-size: 17px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 6%;
+}
+.nav {
+  list-style: none;
+  text-align: center;
+}
+ li {
+  display: inline-block;
+  padding: 0 25px 0 25px;
+}
+ li > a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Righteous', cursive;
+}
+li > a:hover {
+  color: green;
+}
+#add {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+p {
+  font-family: 'Righteous', cursive;
+  color: rgb(255, 0, 43);
+}
+.center {
+  text-align: center;
+
+}
+.pro{
+border: 3px solid black;
+}
+.black {
+  color: black;
+  font-size: 50px;
+}
